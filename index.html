@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Primary
+              cyan: "hsl(179, 62%, 43%)",
+              "bright-yellow": "hsl(71, 73%, 54%)",
+
+              // Neutral
+              "light-gray": "hsl(204, 43%, 93%)",
+              "grayish-blue": "hsl(218, 22%, 67%)",
+            },
+            fontFamily: {
+              karla: ["Karla", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="min-h-screen bg-light-gray flex items-center justify-center">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 w-[90%] md:w-[40rem] shadow-2xl rounded-xl my-16"
+      >
+        <div
+          class="sm:col-span-2 bg-white p-6 sm:p-8 md:p-10 rounded-t-lg sm:rounded-t-xl"
+        >
+          <h1 class="text-cyan text-xl sm:text-2xl font-semibold">
+            Join our community
+          </h1>
+          <h2
+            class="text-bright-yellow font-semibold mt-4 text-base sm:text-lg"
+          >
+            30-day, hassle-free money back guarantee
+          </h2>
+          <span
+            class="block mt-4 sm:mt-2 text-grayish-blue text-sm sm:text-base"
+            >Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.</span
+          >
+        </div>
+        <div class="bg-cyan p-6 sm:p-8 md:p-10 sm:rounded-bl-xl text-white">
+          <h3 class="font-semibold text-lg">Monthly Subscription</h3>
+          <div class="mt-4 flex items-center gap-x-3">
+            <span class="text-2xl font-semibold">&dollar;29</span>
+            <span class="font-thin opacity-75">per month</span>
+          </div>
+          <span class="block mt-3"
+            >Full access for less than &dollar;1 a day</span
+          >
+          <button
+            class="bg-bright-yellow w-full rounded-md py-3 mt-8 shadow-lg font-semibold hover:bg-bright-yellow/80 transition duration-300"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div
+          class="bg-cyan/80 p-6 sm:p-8 md:p-10 rounded-b-lg sm:rounded-b-none sm:rounded-br-xl text-white"
+        >
+          <h3 class="text-lg font-semibold">Why Us</h3>
+          <ul class="text-sm mt-4 opacity-75">
+            <li>
+              <span>Tutorials by industry experts</span>
+            </li>
+            <li>
+              <span>Peer &amp; expert code review</span>
+            </li>
+            <li>
+              <span>Coding exercises</span>
+            </li>
+            <li>
+              <span>Access to our GitHub repos</span>
+            </li>
+            <li>
+              <span>Community forum</span>
+            </li>
+            <li>
+              <span>Flashcard decks</span>
+            </li>
+            <li>
+              <span>New videos every week</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
